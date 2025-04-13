@@ -1,0 +1,286 @@
+:root {
+    --top-menu-height: 1.5em;
+    --text-color: #333333;
+    --text-color-shade: #444444;
+    --background-color: rgb(235, 235, 225);
+    --background-color-shade: rgb(215, 215, 215);
+    --aside-width: 30%;
+    --content-width: 70%;
+    --side-padding: 0.5rem;
+    --border: 1px solid rgb(211, 211, 211);
+    --border-radius: 3px;
+    --background-image: 
+        repeating-linear-gradient(to right, transparent 0px, #dddddd 1px, transparent 1px, transparent 20px),
+        repeating-linear-gradient(to bottom, transparent 0px, #dddddd 1px, transparent 1px, transparent 20px),
+        repeating-linear-gradient(to right, transparent 0px, #bbbbbb 1px, transparent 1px, transparent 80px),
+        repeating-linear-gradient(to bottom, transparent 0px, #bbbbbb 1px, transparent 1px, transparent 80px);
+}
+
+body, html {
+    height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', 'Arial', 'Helvetica', sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color-shade);
+}
+
+#main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#main-header {
+    margin: var(--side-padding) 0;
+    border: 1px solid lightgrey;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 0;;
+}
+
+#main-header #person-name-and-title {
+    flex: 1;
+    padding-left: var(--side-padding);
+    padding-bottom: var(--side-padding);
+}
+
+
+#contact-information {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: var(--side-padding);
+    box-sizing: border-box;
+    font-style: normal;
+    width: var(--aside-width);
+    color: var(--background-color);
+    background-color: var(--text-color-shade);
+    text-align: right;
+}
+
+#contact-information a {
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--background-color-shade);
+    padding: 0.15em var(--side-padding);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+
+}
+
+#contact-information a:hover {
+    border-color: var(--background-color-shade);
+}
+
+#contact-information a::before {
+    content: '\01F310';
+    display: inline-block;
+}
+
+#main-header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#main-header h2 {
+    font-size: 2em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--text-color-shade);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: var(--content-width);
+    padding: 0 var(--side-padding);
+    position: relative;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 1.45em;
+    color: var(--text-color-shade);
+    padding: 1px var(--side-padding);
+    border-bottom: 1px solid var(--text-color-shade);
+    margin: 0;
+}
+
+h4 {
+    margin: var(--side-padding) 0;
+    font-size: 1.25em;;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: var(--top-menu-height);
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-top: none;
+    padding: 2px var(--side-padding);
+    background-color: rgb(205, 205, 205);
+    color: var(--text-color-shade);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+nav ul a:hover {
+    background-color: var(--text-color-shade);
+    color: var(--background-color-shade);
+    border-color: var(--text-color-shade);
+}
+
+.section-content {
+    padding: var(--side-padding);
+    scroll-margin-top: 5em;
+}
+
+article > .control-panel {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--side-padding);
+}
+
+article section ul {
+    padding-left: 1em;
+    list-style-type: square;
+}
+
+article section nav {
+    top: var(--top-menu-height);
+    padding-bottom: 1em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: fit-content;
+    
+}
+
+article section nav ul {
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: var(--side-padding);
+}
+
+article section nav ul li {
+    margin: 0.25em;
+}
+
+article section nav a {
+    display: block;
+    text-decoration: none;
+    padding: var(--side-padding);
+    border-radius: var(--border-radius);
+}
+article section nav a time {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+article section nav a time:last-child {
+    border-top: 2px solid var(--text-color);
+}
+
+article section nav a:hover time:last-child {
+    border-color: var(--background-color);
+}
+
+article nav time {
+    white-space: nowrap;
+}
+
+article .employment-attributes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+article .employment-location {
+    text-align: center;
+}
+
+article .employment-period {
+    text-align: right;
+} 
+
+article section .employment-skillset ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+article section .employment-skillset ul li {
+    padding: var(--side-padding);
+}
+
+aside {
+    margin-top: var(--top-menu-height);
+    width: var(--aside-width);
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: var(--top-menu-height);
+    box-sizing: border-box;
+    padding: 0 var(--side-padding);
+}
+
+
+aside :is(h3, h4) {
+    text-align: right;
+}
+#professional-attributes ul {
+    list-style: none;
+    padding: 0 var(--side-padding) 0 0;
+    margin-bottom: var(--side-padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: var(--side-padding);
+}
+
+#professional-attributes ul li.skill-attribute {
+    display: inline-block;
+    padding: 5px;
+    text-align: right;
+    background-color: var(--text-color-shade);
+    color: var(--background-color-shade);
+    border-radius: var(--border-radius);
+}
