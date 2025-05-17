@@ -23,7 +23,7 @@
       width: 100%;
     }
 
-    #main-menu menu {
+    #main-menu ul {
       margin: 0 auto;
       padding: 0;
       gap: 1rem;
