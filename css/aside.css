@@ -1,0 +1,27 @@
+aside {
+  position: sticky;
+  top: var(--header-height);
+  flex: 0 0 30%;
+  height: calc(100dvh - var(--header-height) - var(--footer-height));
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* special decorative borders */
+aside :is(h3, h4) {
+  border-image: linear-gradient(90deg, transparent, var(--dark-green)) 1;
+}
+
+aside :is(h3, h4) {
+  text-align: right;
+}
+
+#professional-attributes ul {
+  list-style: none;
+  padding: 0 var(--side-padding) 0 0;
+  margin-bottom: var(--side-padding);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: calc(var(--side-padding) * 1.5);
+}

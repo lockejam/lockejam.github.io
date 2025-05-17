@@ -1,0 +1,65 @@
+@media print {
+  * {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border-image: none !important;
+  }
+
+  #main-header {
+    margin-bottom: 2.5em;
+  }
+
+  nav,
+  footer,
+  #back-to-top {
+    display: none;
+  }
+
+  #person-name {
+    text-decoration-color: black;
+  }
+
+  .employment-skillset h5 {
+    display: inline-block;
+  }
+
+  .employment-skillset ul {
+    display: contents;
+  }
+
+  .employment-skillset ul li {
+    display: inline-block;
+  }
+
+  .section-content {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  section#summary,
+  section#experience,
+  section#education {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  /* don’t insert a blank first page */
+  section#summary {
+    page-break-before: auto;
+    break-before: auto;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p,
+  ul {
+    orphans: 2;
+    widows: 2;
+  }
+}

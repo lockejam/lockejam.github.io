@@ -1,0 +1,161 @@
+html {
+  font-size: clamp(14px, 1.5dvw, 18px);
+  line-height: clamp(1.4, 1.5, 1.6);
+  letter-spacing: clamp(0.01em, 0.02dvw, 0.03em);
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--dark-green-rgb), 0.2) transparent;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-color: var(--background-light);
+  color: var(--dark-green);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--dark-green);
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+h3,
+h4 {
+  padding: 1px var(--side-padding);
+  margin: 0;
+}
+
+h4 {
+  margin: var(--side-padding) 0;
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+a.external-link {
+  position: relative;
+}
+
+a.external-link::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin-right: 0.25em;
+  vertical-align: text-bottom;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14 3h7v7h-2V6.41L10.41 15 9 13.59 17.59 5H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v5h2V5zm0 14v-5H3v5c0 1.1.9 2 2 2h5v-2H5zm14 0h-5v2h5c1.1 0 2-.9 2-2v-5h-2v5z'/></svg>") no-repeat center/contain;
+  transition: all var(--transition-speed);
+}
+
+a.external-link:hover::after {
+  opacity: 1;
+  width: 0.65em;
+  height: 0.65em;
+}
+
+.chip-label {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  box-shadow: 0 0 2px rgba(6, 68, 32, 1);
+  border-radius: var(--border-radius);
+  padding: var(--top-padding) var(--side-padding);
+}
+
+a.chip-label:hover {
+  background-color: rgb(200, 230, 200);
+  box-shadow: 0 0 4px rgba(6, 68, 32, 0.8);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: var(--footer-height);
+  right: var(--side-padding);
+  width: 2rem;
+  height: 2rem;
+  color: var(--dark-green);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-speed),
+    visibility var(--transition-speed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#back-to-top::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  border-bottom-left-radius: 25%;
+  transform: rotate(135deg);
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#back-to-top.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+#back-to-top:hover {
+  background-color: var(--light-green);
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow var(--transition-speed),
+    background-color var(--transition-speed);
+}

@@ -1,0 +1,98 @@
+  @media (max-width: 780px) {
+    body {
+      height: 100%;
+    }
+
+    #main-header .wrapper {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    #person-name-and-title {
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+      width: 100%;
+    }
+
+    #job-title {
+      padding: 0 var(--side-padding);
+    }
+
+    #main-menu {
+      width: 100%;
+    }
+
+    #main-menu menu {
+      margin: 0 auto;
+      padding: 0;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #main-menu li:has(a[href="#professional-attributes"]) {
+      display: revert;
+    }
+
+    main.wrapper {
+      flex-direction: column;
+    }
+
+    aside h3,
+    article h3 {
+      text-align: center;
+      border-image: linear-gradient(90deg, transparent, var(--dark-green), transparent) 1;
+    }
+
+    main article,
+    main aside,
+    #professional-attributes ul,
+    #professional-attributes li {
+      display: contents;
+    }
+
+    #summary {
+      order: 1;
+    }
+
+    #professional-attributes {
+      order: 2;
+    }
+
+    #experience {
+      order: 3;
+    }
+
+    #education {
+      order: 4;
+    }
+
+    #summary,
+    #professional-attributes,
+    #experince,
+    #education {
+      overflow: visible;
+    }
+
+    .affiliation-details {
+      grid-template-columns: 1fr;
+    }
+
+    .affiliation-period {
+      text-align: revert;
+    }
+
+    aside h4 {
+      display: none;
+    }
+
+    #professional-attributes {
+      text-align: center;
+    }
+
+    #professional-attributes .chip-label {
+      display: inline-block;
+      margin: var(--side-padding);
+    }
+  }

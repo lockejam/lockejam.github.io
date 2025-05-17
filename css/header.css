@@ -1,0 +1,67 @@
+#main-header {
+  --text-color: var(--text-color-dark-mode);
+  --link-color: var(--link-color-dark-mode);
+
+  background-color: var(--dark-green);
+}
+
+#main-header .wrapper {
+  display: flex;
+  align-items: baseline;
+  padding: 0 var(--side-padding);
+}
+
+#person-name-and-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--side-padding);
+  color: var(--text-color);
+}
+
+#person-name-and-title :where(h1, h2) {
+  margin: 0;
+}
+
+#person-name {
+  text-transform: uppercase;
+  text-decoration: overline underline var(--link-color);
+}
+
+#job-title {
+  font-weight: normal;
+  background-color: rgb(127, 185, 223, 0.2);
+  padding: 0 var(--side-padding);
+  border-radius: var(--border-radius);
+  border: none;
+  font-size: 1.5em;
+}
+
+#main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+#main-menu li:has(a[href="#professional-attributes"]) {
+  display: none;
+}
+
+#main-menu a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+}
+
+#main-menu a:hover,
+#main-menu a.active {
+  text-decoration: none;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+}

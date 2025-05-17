@@ -1,0 +1,19 @@
+:root {
+  --header-height: 5rem;
+  --footer-height: 2rem;
+  --experience-timeline-height: 20rem;
+  --dark-green-rgb: 6, 68, 32;
+  --dark-green: rgba(var(--dark-green-rgb), 1);
+  --light-green: rgb(235, 245, 235);
+  --background-color: rgb(255, 255, 255);
+  --text-color: var(--dark-green);
+  --link-color: rgb(32, 130, 116);
+  --side-padding: 0.5rem;
+  --top-padding: 0.15rem;
+  --border-radius: 0.15rem;
+  --transition-speed: 0.3s;
+
+  /* Dark mode colors */
+  --text-color-dark-mode: rgb(225, 225, 225);
+  --link-color-dark-mode: rgb(165, 225, 215);
+}

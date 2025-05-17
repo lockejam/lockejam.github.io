@@ -1,0 +1,75 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Swap to dark backgrounds */
+    --background-color: #121212;
+    --background-color-shade: #1f1f1f;
+
+    /* Light text on dark */
+    --text-color: var(--text-color-dark-mode);
+
+    /* Adjust your greens to stand out on dark */
+    --dark-green--rgb: 54, 124, 77;
+    --dark-green: rgba(var(--dark-green--rgb), 1);
+    --light-green: #2a4f3e;
+    --link-color: var(--link-color-dark-mode);
+  }
+
+  /* Body & wrapper */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  /* Header & Footer panels */
+  #main-header,
+  #main-footer {
+    background-color: var(--background-color-shade);
+  }
+
+  /* Content cards */
+  .section-content {
+    background-color: var(--background-color-shade);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Sidebar chips */
+  .chip-label {
+    background-color: var(--light-green);
+    color: var(--text-color);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  }
+
+  a.chip-label:hover {
+    color: var(--background-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 1);
+    transition: background-color var(--transition-speed),
+      box-shadow var(--transition-speed);
+  }
+
+  /* Links & nav accents */
+  a,
+  #main-menu a {
+    color: var(--link-color);
+  }
+
+  #main-menu a:hover,
+  #main-menu a.active {
+    background-color: var(--light-green);
+    color: var(--text-color);
+  }
+
+  #person-name {
+    color: var(--link-color);
+    text-decoration-color: var(--dark-green);
+  }
+
+  /* Timeline backgrounds */
+  .organization-timeline .section-content:nth-child(odd) {
+    background-color: var(--background-color); /* lighten to separate cards */
+  }
+
+  .organization-timeline .section-content:nth-child(odd) .affiliation-details,
+  .organization-timeline .section-content:nth-child(odd) h5 {
+    background-color: revert;
+  }
+}

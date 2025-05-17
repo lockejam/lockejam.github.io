@@ -1,0 +1,142 @@
+article :is(h3, h4) {
+  border-image: linear-gradient(90deg, var(--dark-green), transparent) 1;
+}
+
+article section {
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.section-content {
+  padding: var(--side-padding);
+  scroll-margin-top: calc(var(--header-height) + var(--experience-timeline-height));
+  border-radius: var(--border-radius);
+  margin-bottom: var(--side-padding);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h4 {
+  padding-left: 0;
+}
+
+article section ul {
+  padding-left: 1em;
+  margin: 0;
+  list-style-type: square;
+}
+
+article section nav {
+  position: sticky;
+  top: var(--header-height);
+  margin-top: var(--top-padding);
+  padding-bottom: 1em;
+  width: 100%;
+  max-width: 100dvw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: fit-content;
+}
+
+article section nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  padding: 0;
+  margin: var(--side-padding);
+  justify-content: space-evenly;
+  width: fit-content;
+}
+
+article section nav a {
+  border: 2px solid transparent;
+  display: block;
+  text-decoration: none;
+}
+
+article section nav a time {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+article section nav a time:last-child {
+  border-top: 2px solid var(--dark-green);
+}
+
+article nav time {
+  white-space: nowrap;
+}
+
+.organization-timeline .section-content {
+  margin: 2rem 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.organization-timeline .section-content:first-child {
+  margin-top: 0;
+}
+
+.organization-timeline .section-content:nth-child(odd) {
+  background-color: var(--light-green);
+}
+
+.organization-timeline header h4 {
+  margin: 0;
+  line-height: 1;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.affiliation-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  padding: var(--side-padding);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.organization-timeline .section-content:nth-child(odd) .affiliation-details,
+.organization-timeline .section-content:nth-child(odd) h5 {
+  background-color: white;
+}
+
+.organization-timeline .section-content:nth-child(even) .affiliation-details {
+  background-color: var(--light-green);
+}
+
+.organization-timeline .section-content h5 {
+  padding: 0 var(--side-padding);
+  border-left: 0.25rem solid var(--dark-green);
+}
+
+.organization-timeline .section-content:nth-child(even) h5 {
+  background-color: var(--light-green);
+}
+
+.affiliation-period {
+  text-align: right;
+}
+
+.organization-timeline section h5 {
+  text-indent: var(--side-padding);
+  padding: var(--side-padding);
+  padding-bottom: 0;
+}
+
+.employment-accomplishments {
+  margin-bottom: calc(var(--side-padding) * 2.5);
+}
+
+.employment-skillset ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.employment-skillset ul li {
+  padding: var(--side-padding);
+  padding-top: 0;
+  margin: 0 0.1rem;
+}
