@@ -47,6 +47,7 @@ article section nav ul {
   margin: var(--side-padding);
   justify-content: space-evenly;
   width: fit-content;
+  min-width: 100%;
 }
 
 article section nav a {
