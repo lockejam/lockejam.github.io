@@ -59,9 +59,10 @@
     color var(--transition-speed);
 }
 
-#main-menu a:hover,
-#main-menu a.active {
-  text-decoration: none;
-  background-color: var(--light-green);
-  color: var(--dark-green);
+@media (hover: hover) and (pointer: fine) {
+  #main-menu a:hover {
+    text-decoration: none;
+    background-color: var(--light-green);
+    color: var(--dark-green);
+  }
 }

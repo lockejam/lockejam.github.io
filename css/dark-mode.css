@@ -39,24 +39,12 @@
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
   }
 
-  a.chip-label:hover {
-    color: var(--background-color);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 1);
-    transition: background-color var(--transition-speed),
-      box-shadow var(--transition-speed);
-  }
-
   /* Links & nav accents */
   a,
   #main-menu a {
     color: var(--link-color);
   }
 
-  #main-menu a:hover,
-  #main-menu a.active {
-    background-color: var(--light-green);
-    color: var(--text-color);
-  }
 
   #person-name {
     color: var(--link-color);
@@ -65,11 +53,28 @@
 
   /* Timeline backgrounds */
   .organization-timeline .section-content:nth-child(odd) {
-    background-color: var(--background-color); /* lighten to separate cards */
+    background-color: var(--background-color);
+    /* lighten to separate cards */
   }
 
   .organization-timeline .section-content:nth-child(odd) .affiliation-details,
   .organization-timeline .section-content:nth-child(odd) h5 {
     background-color: revert;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+
+    a.chip-label:hover {
+      color: var(--background-color);
+      box-shadow: 0 0 4px rgba(0, 0, 0, 1);
+      transition: background-color var(--transition-speed),
+        box-shadow var(--transition-speed);
+    }
+
+    #main-menu a:hover {
+      background-color: var(--light-green);
+      color: var(--text-color);
+    }
+
   }
 }
