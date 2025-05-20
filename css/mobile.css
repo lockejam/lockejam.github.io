@@ -1,6 +1,6 @@
-  @media (max-width: 850px) or (max-height: 500px) {
+  @media (max-width: 840px) or (max-height: 480px) {
 
-    @media (max-height: 500px) {
+    @media (max-height: 480px) {
 
       #main-header,
       #main-footer {
@@ -9,6 +9,14 @@
 
       article section nav {
         top: 0;
+      }
+
+      .section-content {
+        scroll-margin-top: var(--experience-timeline-height);
+      }
+
+      #back-to-top {
+        bottom: 0;
       }
 
     }

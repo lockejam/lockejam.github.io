@@ -12,8 +12,11 @@ article section {
   padding: var(--side-padding);
   scroll-margin-top: calc(var(--header-height) + var(--experience-timeline-height));
   border-radius: var(--border-radius);
-  margin-bottom: var(--side-padding);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin: 2rem var(--side-padding);
+}
+
+#summary .section-content p:first-child {
+  margin-top: 0;
 }
 
 .section-content h4 {
@@ -30,7 +33,7 @@ article section nav {
   position: sticky;
   top: var(--header-height);
   margin-top: var(--top-padding);
-  padding-bottom: 1em;
+  padding: 1rem 0.1rem;;
   width: 100%;
   max-width: 100dvw;
   overflow-x: auto;
@@ -44,7 +47,6 @@ article section nav ul {
   flex-wrap: nowrap;
   gap: 0.25rem;
   padding: 0;
-  margin: var(--side-padding);
   justify-content: space-evenly;
   width: fit-content;
   min-width: 100%;
@@ -68,11 +70,6 @@ article section nav a time:last-child {
 
 article nav time {
   white-space: nowrap;
-}
-
-.organization-timeline .section-content {
-  margin: 2rem 0.5rem;
-  border-radius: var(--border-radius);
 }
 
 .organization-timeline .section-content:first-child {

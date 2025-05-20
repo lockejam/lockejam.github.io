@@ -23,7 +23,7 @@
   main.wrapper {
     display: flex;
     flex: 1;
-    gap: 2rem;
+    gap: 1vw;
   }
   
   main.wrapper aside,

@@ -1,6 +1,6 @@
 #main-footer {
-  --text-color: var(--text-color-dark-mode);
-  --link-color: var(--link-color-dark-mode);
+  --text-color: var(--text-color-dark-background);
+  --link-color: var(--link-color-dark-background);
 
   background-color: var(--dark-green);
 }

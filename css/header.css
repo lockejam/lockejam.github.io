@@ -1,6 +1,7 @@
 #main-header {
-  --text-color: var(--text-color-dark-mode);
-  --link-color: var(--link-color-dark-mode);
+  --text-color: var(--text-color-dark-background);
+  --link-color: var(--link-color-dark-background);
+  --background-highlight-rgb: 127, 185, 223; 
 
   background-color: var(--dark-green);
 }
@@ -21,16 +22,18 @@
 
 #person-name-and-title :where(h1, h2) {
   margin: 0;
+  white-space: nowrap;
 }
 
 #person-name {
+  position: relative;
   text-transform: uppercase;
-  text-decoration: overline underline var(--link-color);
+  color: var(--link-color);
 }
 
 #job-title {
   font-weight: normal;
-  background-color: rgb(127, 185, 223, 0.2);
+  background-color: rgb(var(--background-highlight-rgb), 0.2);
   padding: 0 var(--side-padding);
   border-radius: var(--border-radius);
   border: none;
@@ -43,7 +46,7 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 5em;
+  gap: clamp(1rem, 4vw, 5em);
 }
 
 #main-menu li:has(a[href="#professional-attributes"]) {
@@ -51,7 +54,7 @@
 }
 
 #main-menu a {
-  color: var(--text-color);
+  color: var(--link-color);
   text-decoration: none;
   padding: 0.5rem;
   border-radius: var(--border-radius);

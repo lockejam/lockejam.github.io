@@ -16,8 +16,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  background-color: var(--background-light);
-  color: var(--dark-green);
+  background-color: var(--background-color);
+  color: var(--text-color);
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -27,8 +27,6 @@ h1 {
   font-weight: 200;
   font-size: 2rem;
   letter-spacing: 0.5px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
 }
 
 h3 {
@@ -97,10 +95,11 @@ a.external-link::after {
 
 .chip-label {
   background-color: var(--light-green);
-  color: var(--dark-green);
-  box-shadow: 0 0 2px rgba(6, 68, 32, 1);
+  color: var(--text-color);
+  box-shadow: 0 0 2px rgba(var(--dark-green-rgb), 1);
   border-radius: var(--border-radius);
   padding: var(--top-padding) var(--side-padding);
+  border: 1px solid var(--light-green);
 }
 
 #back-to-top {
@@ -139,27 +138,26 @@ a.external-link::after {
   opacity: 1;
 }
 
-@media (hover: none) and (pointer: fine) {
-  a:hover {
-    color: var(--text-color);
-  }
+a:hover {
+  color: var(--text-color);
+}
 
-  a.external-link:hover::after {
-    opacity: 1;
-    width: 0.65em;
-    height: 0.65em;
-  }
+a.external-link:hover::after {
+  opacity: 1;
+  width: 0.65em;
+  height: 0.65em;
+}
+
+@media (hover: hover) and (pointer: fine) {
 
   a.chip-label:hover {
-    background-color: rgb(200, 230, 200);
-    box-shadow: 0 0 4px rgba(6, 68, 32, 0.8);
-    transition: background-color 0.2s, box-shadow 0.2s;
+    border-color: var(--dark-green);
+    transition: all var(--transition-speed);
   }
 
   #back-to-top:hover {
     background-color: var(--light-green);
     box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
-    transition: box-shadow var(--transition-speed),
-      background-color var(--transition-speed);
+    transition: all var(--transition-speed);
   }
 }

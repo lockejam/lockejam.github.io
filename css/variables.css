@@ -14,6 +14,6 @@
   --transition-speed: 0.3s;
 
   /* Dark mode colors */
-  --text-color-dark-mode: rgb(225, 225, 225);
-  --link-color-dark-mode: rgb(165, 225, 215);
+  --text-color-dark-background: rgb(225, 225, 225);
+  --link-color-dark-background: rgb(165, 225, 215);
 }
