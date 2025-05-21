@@ -39,6 +39,7 @@ article section nav {
   overflow-x: auto;
   overflow-y: hidden;
   height: fit-content;
+  box-sizing: border-box;
 }
 
 article section nav ul {

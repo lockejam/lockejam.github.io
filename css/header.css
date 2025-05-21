@@ -15,7 +15,7 @@
 #person-name-and-title {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: var(--side-padding);
   color: var(--text-color);
 }
@@ -27,7 +27,6 @@
 
 #person-name {
   position: relative;
-  text-transform: uppercase;
   color: var(--link-color);
 }
 
