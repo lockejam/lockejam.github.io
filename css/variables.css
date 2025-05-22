@@ -4,16 +4,30 @@
   --experience-timeline-height: 20rem;
   --dark-green-rgb: 6, 68, 32;
   --dark-green: rgba(var(--dark-green-rgb), 1);
-  --light-green: rgb(235, 245, 235);
+  --light-green-rgb: 235, 245, 235;
+  --light-green: rgb(var(--light-green-rgb));
   --background-color: rgb(255, 255, 255);
+  --background-color-shade: rgba(var(--light-green-rgb), 0.75);
   --text-color: var(--dark-green);
+  --text-color-dark-background: rgb(225, 225, 225);
   --link-color: rgb(32, 130, 116);
+  --link-color-dark-background: rgb(165, 225, 215);
+  --border-color: rgba(55, 125, 75, 1);
   --side-padding: 0.5rem;
   --top-padding: 0.15rem;
   --border-radius: 0.15rem;
   --transition-speed: 0.3s;
+}
 
-  /* Dark mode colors */
-  --text-color-dark-background: rgb(225, 225, 225);
-  --link-color-dark-background: rgb(165, 225, 215);
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --background-color: #121212;
+    --background-color-shade: #1d1d1d;
+    --text-color: var(--text-color-dark-background);
+    --link-color: var(--link-color-dark-background);
+    --dark-green: rgb(15, 30, 30);
+    --light-green: rgb(45, 80, 60);
+  }
+
 }

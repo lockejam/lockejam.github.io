@@ -1,9 +1,10 @@
 #main-header {
   --text-color: var(--text-color-dark-background);
   --link-color: var(--link-color-dark-background);
-  --background-highlight-rgb: 127, 185, 223; 
+  --background-highlight-rgb: var(--light-green-rgb);
 
   background-color: var(--dark-green);
+  box-shadow: 0 0 4px rgb(0, 0, 0, 0.85);
 }
 
 #main-header .wrapper {
@@ -32,7 +33,7 @@
 
 #job-title {
   font-weight: normal;
-  background-color: rgb(var(--background-highlight-rgb), 0.2);
+  background-color: rgb(var(--background-highlight-rgb), 0.1);
   padding: 0 var(--side-padding);
   border-radius: var(--border-radius);
   border: none;
@@ -65,6 +66,6 @@
   #main-menu a:hover {
     text-decoration: none;
     background-color: var(--light-green);
-    color: var(--dark-green);
+    color: var(--text-green);
   }
 }

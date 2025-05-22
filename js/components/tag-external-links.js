@@ -42,7 +42,7 @@ function isExternal(link, origin) {
  *   - sets rel="noopener"
  *   - adds class "external-link"
  */
-export function markExternalLinks() {
+function markExternalLinks() {
 
     const origin = window.location.origin;
 

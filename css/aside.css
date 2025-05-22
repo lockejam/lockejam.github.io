@@ -9,7 +9,7 @@ aside {
 
 /* special decorative borders */
 aside :is(h3, h4) {
-  border-image: linear-gradient(90deg, transparent, var(--dark-green)) 1;
+  border-image: linear-gradient(90deg, transparent, var(--border-color)) 1;
 }
 
 aside :is(h3, h4) {

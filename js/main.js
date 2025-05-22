@@ -1,6 +1,6 @@
-import { initSizeObserver } from "./components/element-size-observer.js";
-import { initBackToTop } from "./components/back-to-top.js";
-import { scheduleExternalLinks } from "./components/tag-external-links.js";
+import { initSizeObserver } from "element-size-observer";
+import { initBackToTop } from "back-to-top";
+import { scheduleExternalLinks } from "tag-external-links";
 
 document.addEventListener('DOMContentLoaded', () => {
 

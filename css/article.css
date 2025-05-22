@@ -1,5 +1,5 @@
 article :is(h3, h4) {
-  border-image: linear-gradient(90deg, var(--dark-green), transparent) 1;
+  border-image: linear-gradient(90deg, var(--border-color), transparent) 1;
 }
 
 article section {
@@ -66,7 +66,7 @@ article section nav a time {
 }
 
 article section nav a time:last-child {
-  border-top: 2px solid var(--dark-green);
+  border-top: 2px solid var(--border-color);
 }
 
 article nav time {
@@ -78,7 +78,7 @@ article nav time {
 }
 
 .organization-timeline .section-content:nth-child(odd) {
-  background-color: var(--light-green);
+  background-color: var(--background-color-shade);
 }
 
 .organization-timeline header h4 {
@@ -96,22 +96,9 @@ article nav time {
   border-bottom-left-radius: var(--border-radius);
 }
 
-.organization-timeline .section-content:nth-child(odd) .affiliation-details,
-.organization-timeline .section-content:nth-child(odd) h5 {
-  background-color: white;
-}
-
-.organization-timeline .section-content:nth-child(even) .affiliation-details {
-  background-color: var(--light-green);
-}
-
 .organization-timeline .section-content h5 {
   padding: 0 var(--side-padding);
-  border-left: 0.25rem solid var(--dark-green);
-}
-
-.organization-timeline .section-content:nth-child(even) h5 {
-  background-color: var(--light-green);
+  border-left: 0.25rem solid var(--border-color);
 }
 
 .affiliation-period {

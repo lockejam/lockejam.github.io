@@ -4,7 +4,7 @@ html {
   letter-spacing: clamp(0.01em, 0.02dvw, 0.03em);
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: rgba(var(--dark-green-rgb), 0.2) transparent;
+  scrollbar-color: rgba(var(--dark-green-rgb), 0.5) transparent;
 }
 
 body {
@@ -37,7 +37,7 @@ h3,
 h4 {
   font-weight: 400;
   letter-spacing: 0.5px;
-  border-bottom: 1px solid var(--dark-green);
+  border-bottom: 1px solid var(--border-color);
 }
 
 h3 {
@@ -95,7 +95,7 @@ a.external-link::after {
 .chip-label {
   background-color: var(--light-green);
   color: var(--text-color);
-  box-shadow: 0 0 2px rgba(var(--dark-green-rgb), 1);
+  box-shadow: 0 0 2px rgb(var(--dark-green-rgb));
   border-radius: var(--border-radius);
   padding: var(--top-padding) var(--side-padding);
   border: 1px solid var(--light-green);
@@ -107,7 +107,7 @@ a.external-link::after {
   right: var(--side-padding);
   width: 2rem;
   height: 2rem;
-  color: var(--dark-green);
+  color: var(--link-color);
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   opacity: 0;
@@ -150,7 +150,7 @@ a.external-link:hover::after {
 @media (hover: hover) and (pointer: fine) {
 
   a.chip-label:hover {
-    border-color: var(--dark-green);
+    border-color: var(--border-color);
     transition: all var(--transition-speed);
   }
 
