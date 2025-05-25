@@ -13,21 +13,10 @@
   padding: var(--side-padding);
   box-sizing: border-box;
   font-style: normal;
-  color: var(--background-color);
   text-align: right;
 }
 
 #contact-information a {
-  display: inline-block;
   white-space: nowrap;
   padding: 0.15em var(--side-padding);
-  border: 1px solid transparent;
-  border-radius: var(--border-radius);
-  color: var(--link-color);
-}
-
-#contact-information a::before {
-  content: "\01F310";
-  display: inline-block;
-  margin-right: 0.25em;
 }
