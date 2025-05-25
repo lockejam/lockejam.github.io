@@ -27,6 +27,10 @@ article section ul {
   padding-left: 1em;
   margin: 0;
   list-style-type: square;
+
+  li::marker{
+    color: var(--border-color);
+  }
 }
 
 article section nav {

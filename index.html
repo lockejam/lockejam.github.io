@@ -1,856 +1,871 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Lucci - Software Developer</title>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
 
-    <link rel="stylesheet" href="./css/main.css?v=1.0.3" />
+    <link rel="stylesheet" href="./css/main.css?v=1.0.4" />
 
     <script type="importmap">
-        {
-            "imports": {
-                "element-size-observer": "../js/components/element-size-observer.js?v=1.0.0",
-                "back-to-top": "../js/components/back-to-top.js?v=1.0.0",
-                "tag-external-links": "../js/components/tag-external-links.js?v=1.0.0"
-            }
+      {
+        "imports": {
+          "element-size-observer": "../js/components/element-size-observer.js?v=1.0.0",
+          "back-to-top": "../js/components/back-to-top.js?v=1.0.0",
+          "tag-external-links": "../js/components/tag-external-links.js?v=1.0.0"
         }
+      }
     </script>
 
     <script type="module" src="./js/main.js?v=1.0.1"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <a id="top"></a>
     <header id="main-header">
-        <div class="wrapper">
-            <div id="person-name-and-title">
-                <h1 id="person-name">
-                    <span class="first-name">Michael</span>
-                    <span class="last-name">Lucci</span>
-                </h1>
-                <h2 id="job-title">Software Developer</h2>
-            </div>
-            <nav id="main-menu" aria-label="Main site navigation">
-                <ul class="main-menu-list">
-                    <li>
-                        <a href="#summary">Summary</a>
-                    </li>
-                    <li>
-                        <a href="#professional-attributes">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#education">Education</a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="wrapper">
+        <div id="person-name-and-title">
+          <h1 id="person-name">
+            <span class="first-name">Michael</span>
+            <span class="last-name">Lucci</span>
+          </h1>
+          <h2 id="job-title">Software Developer</h2>
         </div>
+        <nav id="main-menu" aria-label="Main site navigation">
+          <ul class="main-menu-list">
+            <li>
+              <a href="#summary">Summary</a>
+            </li>
+            <li>
+              <a href="#professional-attributes">Skills</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main id="main-content" class="wrapper">
-        <aside>
-            <section id="professional-attributes">
-                <h3>Skills</h3>
-                <ul class="attribute-list">
-                    <li>
-                        <h4>Programming Languages</h4>
-                        <ul>
-                            <li><span class="chip-label">C#</span></li>
-                            <li><span class="chip-label">JavaScript</span></li>
-                            <li><span class="chip-label">T-SQL</span></li>
-                            <li><span class="chip-label">Powershell</span></li>
-                            <li><span class="chip-label">PHP</span></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Frameworks</h4>
-                        <ul>
-                            <li><span class="chip-label">.NET Framework</span></li>
-                            <li><span class="chip-label">.NET Core</span></li>
-                            <li><span class="chip-label">ASP.NET MVC</span></li>
-                            <li><span class="chip-label">Winforms</span></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Frontend Technologies</h4>
-                        <ul>
-                            <li><span class="chip-label">HTML</span></li>
-                            <li><span class="chip-label">CSS</span></li>
-                            <li><span class="chip-label">jQuery</span></li>
-                            <li><span class="chip-label">Knockout.js</span></li>
-                            <li><span class="chip-label">DataTables.js</span></li>
-                            <li><span class="chip-label">Bootstrap.js</span></li>
-                            <li><span class="chip-label">Dapper</span></li>
-                            <li><span class="chip-label">plotly.js</span></li>
-                            <li><span class="chip-label">dexie.js</span></li>
-                            <li><span class="chip-label">Fork Awesome</span></li>
-                            <li><span class="chip-label">AJAX</span></li>
-                            <li><span class="chip-label">Dropzone.js</span></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Data Access</h4>
-                        <ul>
-                            <li><span class="chip-label">Entity Framework Core</span></li>
-                            <li><span class="chip-label">Entity Framework</span></li>
-                            <li><span class="chip-label">ADO.NET</span></li>
-                            <li><span class="chip-label">Dapper</span></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Version Control</h4>
-                        <ul>
-                            <li><span class="chip-label">Git</span></li>
-                            <li><span class="chip-label">Bitbucket</span></li>
-                            <li><span class="chip-label">GitLab</span></li>
-                            <li><span class="chip-label">RhodeCode</span></li>
-                            <li><span class="chip-label">TortoiseSVN</span></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Tools & Environments</h4>
-                        <ul>
-                            <li><span class="chip-label">Visual Studio</span></li>
-                            <li>
-                                <span class="chip-label">SQL Server Management Studio</span>
-                            </li>
-                            <li><span class="chip-label">Azure</span></li>
-                            <li><span class="chip-label">WordPress</span></li>
-                        </ul>
-                    </li>
+      <aside>
+        <section id="professional-attributes">
+          <h3>Skills</h3>
+          <ul class="attribute-list">
+            <li>
+              <h4>Programming Languages</h4>
+              <ul>
+                <li><span class="chip-label">C#</span></li>
+                <li><span class="chip-label">JavaScript</span></li>
+                <li><span class="chip-label">T-SQL</span></li>
+                <li><span class="chip-label">Powershell</span></li>
+                <li><span class="chip-label">PHP</span></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Frameworks</h4>
+              <ul>
+                <li><span class="chip-label">.NET Framework</span></li>
+                <li><span class="chip-label">.NET Core</span></li>
+                <li><span class="chip-label">ASP.NET MVC</span></li>
+                <li><span class="chip-label">Winforms</span></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Frontend Technologies</h4>
+              <ul>
+                <li><span class="chip-label">HTML</span></li>
+                <li><span class="chip-label">CSS</span></li>
+                <li><span class="chip-label">jQuery</span></li>
+                <li><span class="chip-label">Knockout.js</span></li>
+                <li><span class="chip-label">DataTables.js</span></li>
+                <li><span class="chip-label">Bootstrap.js</span></li>
+                <li><span class="chip-label">Dapper</span></li>
+                <li><span class="chip-label">plotly.js</span></li>
+                <li><span class="chip-label">dexie.js</span></li>
+                <li><span class="chip-label">Fork Awesome</span></li>
+                <li><span class="chip-label">AJAX</span></li>
+                <li><span class="chip-label">Dropzone.js</span></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Data Access</h4>
+              <ul>
+                <li><span class="chip-label">Entity Framework Core</span></li>
+                <li><span class="chip-label">Entity Framework</span></li>
+                <li><span class="chip-label">ADO.NET</span></li>
+                <li><span class="chip-label">Dapper</span></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Version Control</h4>
+              <ul>
+                <li><span class="chip-label">Git</span></li>
+                <li><span class="chip-label">Bitbucket</span></li>
+                <li><span class="chip-label">GitLab</span></li>
+                <li><span class="chip-label">RhodeCode</span></li>
+                <li><span class="chip-label">TortoiseSVN</span></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Tools & Environments</h4>
+              <ul>
+                <li><span class="chip-label">Visual Studio</span></li>
+                <li>
+                  <span class="chip-label">SQL Server Management Studio</span>
+                </li>
+                <li><span class="chip-label">Azure</span></li>
+                <li><span class="chip-label">WordPress</span></li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Certifications</h3>
+          <ul class="attribute-list">
+            <li><span class="chip-label">COMPTIA Security+ ce</span></li>
+          </ul>
+        </section>
+      </aside>
+      <article>
+        <section id="summary">
+          <h3>Summary</h3>
+          <div class="section-content">
+            <p>
+              I'm a Senior Software Developer at
+              <a href="https://www.dsainc.com/">DSA, Inc.</a>
+              <b>modernizing legacy .NET services</b>,
+              <b>architecting and building new web solutions</b>, crafting
+              responsive UIs with <b>HTML5, CSS3 & JavaScript</b>, and
+              fine-tuning databases and APIs for real-world performance. I
+              thrive on building greenfield projects and refactoring messy
+              codebases to deliver products that meets the needs of the customer
+              and provides an engaging experience for end users.
+            </p>
+            <ul>
+              <li>Comfortable collaborating with remote or in-person teams.</li>
+              <li>
+                Clear communicator who can easily discuss ideas with both
+                technical and non-technical folks.
+              </li>
+              <li>
+                Consistently proactive in learning new skills and tackling
+                complex challenges.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="experience">
+          <h3>Experience</h3>
+          <nav id="experience-timeline" aria-label="Employment history">
+            <ul class="timeline">
+              <li>
+                <a href="#experience-2024-11" class="chip-label">
+                  <time datetime="2025-02">Present</time>
+                  <time datetime="2024-11">Nov 2024</time>
+                </a>
+              </li>
+              <li>
+                <a href="#experience-2023-04" class="chip-label">
+                  <time datetime="2024-11">Nov 2024</time>
+                  <time datetime="2023-04">Apr 2023</time>
+                </a>
+              </li>
+              <li>
+                <a href="#experience-2022-10" class="chip-label">
+                  <time datetime="2023-03">Mar 2023</time>
+                  <time datetime="2022-10">Oct 2022</time>
+                </a>
+              </li>
+              <li>
+                <a href="#experience-2021-01" class="chip-label">
+                  <time datetime="2022-10">Oct 2022</time>
+                  <time datetime="2021-01">Jan 2021</time>
+                </a>
+              </li>
+              <li>
+                <a href="#experience-2019-01" class="chip-label">
+                  <time datetime="2022-01">Jan 2021</time>
+                  <time datetime="2019-01">Jan 2019</time>
+                </a>
+              </li>
+              <li>
+                <a href="#experience-2013-01" class="chip-label">
+                  <time datetime="2019-01">Jan 2019</time>
+                  <time datetime="2013-01">Jan 2013</time>
+                </a>
+              </li>
+              <li>
+                <a href="#experience-2011-09" class="chip-label">
+                  <time datetime="2011-12">Dec 2011</time>
+                  <time datetime="2011-09">Sept 2011</time>
+                </a>
+              </li>
+              <li>
+                <a href="#experience-2002-11" class="chip-label">
+                  <time datetime="2006-11">Nov 2006</time>
+                  <time datetime="2002-11">Nov 2002</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="organization-timeline">
+            <div id="employment-2024-11" class="section-content">
+              <header>
+                <h4>Senior Software Developer</h4>
+                <div class="affiliation-details">
+                  <a class="emloyment-company" href="https://www.dsainc.com/"
+                    >DSA, Inc.</a
+                  >
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2024-11">Nov 2024</time>
+                    -
+                    <time class="end-date" datetime="2025-02">Present</time>
+                  </span>
+                </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  G/TIMS is an all-encompassing program, allowing aircrew to
+                  optimize and manage all aspects of aviation operations and
+                  training. The G/TIMS covers personnel, resources, planning,
+                  schedules, standards and evaluation, flight records, and
+                  reporting.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Provide technical guidance to ensure system architecture and
+                    code quality align with business goals.
+                  </li>
+                  <li>
+                    Analyze and document existing systems to improve performance
+                    and maintainability.
+                  </li>
+                  <li>
+                    Ensure compliance with best coding practices to improve
+                    system stability and reliability.
+                  </li>
+                  <li>
+                    Review, test, and debug complex issues within the G/TIMS
+                    system.
+                  </li>
+                  <li>
+                    Work closely with cross-functional teams to enhance software
+                    development and implementation processes.
+                  </li>
                 </ul>
-                <h3>Certifications</h3>
-                <ul class="attribute-list">
-                    <li><span class="chip-label">COMPTIA Security+ ce</span></li>
+                <div class="employment-skillset">
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.dsainc.com/data-systems-analysts,-inc.-is-awarded-air-force-contract"
+                        >G/TIMS</a
+                      >
+                    </li>
+                  </ul>
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>C#</li>
+                    <li>T-SQL</li>
+                  </ul>
+                  <h5>Frameworks</h5>
+                  <ul>
+                    <li>.NET Framework</li>
+                    <li>Winforms</li>
+                  </ul>
+                  <h5>Tools & Environments</h5>
+                  <ul>
+                    <li>SSMS</li>
+                    <li>Gitlab</li>
+                    <li>Redmine</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="employment-2023-04" class="section-content">
+              <header>
+                <h4>Senior Application Systems Analyst and Programmer</h4>
+                <div class="affiliation-details">
+                  <a
+                    class="emloyment-company"
+                    href="https://www.powtecsolutions.com/"
+                    >POWTEC SOLUTIONS, LLC</a
+                  >
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2023-04">Apr 2023</time>
+                    -
+                    <time class="end-date" datetime="2024-11">Nov 2024</time>
+                  </span>
+                </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  Served as Senior Developer for the TACOM Arsenal's Integrated
+                  Logistics Support Center (ILSC)
+                  <b>Packaging</b> application.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Developed a public-facing version of the Packaging
+                    application to allow contractors to specify packaging
+                    requirements for equipment.
+                  </li>
+                  <li>
+                    Implemented a RESTful API to allow for updates from
+                    <a
+                      href="https://www.dla.mil/Working-With-DLA/Applications/Details/Article/2876998/webflis-web-federal-logistics-information-system/"
+                      >WebFLIS</a
+                    >.
+                  </li>
+                  <li>
+                    Led the conversion of an ASP.Net 4.7x application to ASP.NET
+                    Core 7.0.
+                  </li>
+                  <li>
+                    Optimized application performance, improving user
+                    productivity and efficiency.
+                  </li>
+                  <li>
+                    Implemented DRY programming principles, reducing redundant
+                    code and increasing maintainability.
+                  </li>
+                  <li>
+                    Updated client-side scripts with modern ECMAScript
+                    standards, reducing third-party library dependencies.
+                  </li>
                 </ul>
-            </section>
-        </aside>
-        <article>
-            <section id="summary">
-                <h3>Summary</h3>
-                <div class="section-content">
-                    <p>
-                        I'm a Software Developer who enjoys building reliable and
-                        efficient enterprise apps. I handle the full development life
-                        cycle—from gathering requirements and writing clean code to
-                        launching systems and supporting them over time. I like solving
-                        tricky problems and helping my teammates grow.
-                    </p>
-                    <p>
-                        Currently, I'm working as a Senior Software Developer at
-                        <a href="https://www.dsainc.com/">DSA, Inc.</a>, focusing on
-                        enhancing system architecture and improving software performance
-                        and reliability. My role involves closely collaborating with
-                        cross-functional teams to deliver effective technical solutions.
-                    </p>
-                    <p>
-                        In previous roles, I've successfully led application migrations,
-                        implemented performance optimizations, and developed APIs that
-                        improved application usability and data integration capabilities.
-                    </p>
-                    <ul>
-                        <li>Comfortable collaborating with remote or in-person teams.</li>
-                        <li>
-                            Clear communicator who can easily discuss ideas with both
-                            technical and non-technical folks.
-                        </li>
-                        <li>
-                            Consistently proactive in learning new skills and tackling
-                            complex challenges.
-                        </li>
-                    </ul>
+                <div class="employment-skillset">
+                  <h5>Projects</h5>
+                  <ul>
+                    <li><b>Packaging</b></li>
+                  </ul>
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>T-SQL</li>
+                    <li>Powershell</li>
+                  </ul>
+                  <h5>Frontend Technologies</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>DataTables.js</li>
+                    <li>jQuery</li>
+                    <li>Fork Awesome</li>
+                  </ul>
+                  <h5>Frameworks</h5>
+                  <ul>
+                    <li>.NET Framework</li>
+                    <li>.NET Core</li>
+                    <li>Entity Framework Core</li>
+                    <li>Entity Framework</li>
+                    <li>ASP.NET MVC</li>
+                  </ul>
+                  <h5>Tools & Environments</h5>
+                  <ul>
+                    <li>SSMS</li>
+                    <li>Gitlab</li>
+                  </ul>
                 </div>
-            </section>
-            <section id="experience">
-                <h3>Experience</h3>
-                <nav id="experience-timeline" aria-label="Employment history">
-                    <ul class="timeline">
-                        <li>
-                            <a href="#employment-2024-11" class="chip-label">
-                                <time datetime="2025-02">Present</time>
-                                <time datetime="2024-11">Nov 2024</time>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#employment-2023-04" class="chip-label">
-                                <time datetime="2024-11">Nov 2024</time>
-                                <time datetime="2023-04">Apr 2023</time>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#employment-2022-10" class="chip-label">
-                                <time datetime="2023-03">Mar 2023</time>
-                                <time datetime="2022-10">Oct 2022</time>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#employment-2021-01" class="chip-label">
-                                <time datetime="2022-10">Oct 2022</time>
-                                <time datetime="2021-01">Jan 2021</time>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#employment-2019-01" class="chip-label">
-                                <time datetime="2022-01">Jan 2021</time>
-                                <time datetime="2019-01">Jan 2019</time>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#employment-2013-01" class="chip-label">
-                                <time datetime="2019-01">Jan 2019</time>
-                                <time datetime="2013-01">Jan 2013</time>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#employment-2011-09" class="chip-label">
-                                <time datetime="2011-12">Dec 2011</time>
-                                <time datetime="2011-09">Sept 2011</time>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#employment-2002-11" class="chip-label">
-                                <time datetime="2006-11">Nov 2006</time>
-                                <time datetime="2002-11">Nov 2002</time>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="organization-timeline">
-                    <div id="employment-2024-11" class="section-content">
-                        <header>
-                            <h4>Senior Software Developer</h4>
-                            <div class="affiliation-details">
-                                <a class="emloyment-company" href="https://www.dsainc.com/">DSA, Inc.</a>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2024-11">Nov 2024</time>
-                                    -
-                                    <time class="end-date" datetime="2025-02">Present</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                G/TIMS is an all-encompassing program, allowing aircrew to
-                                optimize and manage all aspects of aviation operations and
-                                training. The G/TIMS covers personnel, resources, planning,
-                                schedules, standards and evaluation, flight records, and
-                                reporting.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Provide technical guidance to ensure system architecture and
-                                    code quality align with business goals.
-                                </li>
-                                <li>
-                                    Analyze and document existing systems to improve performance
-                                    and maintainability.
-                                </li>
-                                <li>
-                                    Ensure compliance with best coding practices to improve
-                                    system stability and reliability.
-                                </li>
-                                <li>
-                                    Review, test, and debug complex issues within the G/TIMS
-                                    system.
-                                </li>
-                                <li>
-                                    Work closely with cross-functional teams to enhance software
-                                    development and implementation processes.
-                                </li>
-                            </ul>
-                            <div class="employment-skillset">
-                                <h5>Projects</h5>
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="https://www.dsainc.com/data-systems-analysts,-inc.-is-awarded-air-force-contract">G/TIMS</a>
-                                    </li>
-                                </ul>
-                                <h5>Programming Languages</h5>
-                                <ul>
-                                    <li>C#</li>
-                                    <li>T-SQL</li>
-                                </ul>
-                                <h5>Frameworks</h5>
-                                <ul>
-                                    <li>.NET Framework</li>
-                                    <li>Winforms</li>
-                                </ul>
-                                <h5>Tools & Environments</h5>
-                                <ul>
-                                    <li>SSMS</li>
-                                    <li>Gitlab</li>
-                                    <li>Redmine</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="employment-2023-04" class="section-content">
-                        <header>
-                            <h4>Senior Application Systems Analyst and Programmer</h4>
-                            <div class="affiliation-details">
-                                <a class="emloyment-company" href="https://www.powtecsolutions.com/">POWTEC SOLUTIONS,
-                                    LLC</a>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2023-04">Apr 2023</time>
-                                    -
-                                    <time class="end-date" datetime="2024-11">Nov 2024</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                Served as Senior Developer for the TACOM Arsenal's Integrated
-                                Logistics Support Center (ILSC)
-                                <b>Packaging</b> application.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Developed a public-facing version of the Packaging
-                                    application to allow contractors to specify packaging
-                                    requirements for equipment.
-                                </li>
-                                <li>
-                                    Implemented a RESTful API to allow for updates from
-                                    <a
-                                        href="https://www.dla.mil/Working-With-DLA/Applications/Details/Article/2876998/webflis-web-federal-logistics-information-system/">WebFLIS</a>.
-                                </li>
-                                <li>
-                                    Led the conversion of an ASP.Net 4.7x application to ASP.NET
-                                    Core 7.0.
-                                </li>
-                                <li>
-                                    Optimized application performance, improving user
-                                    productivity and efficiency.
-                                </li>
-                                <li>
-                                    Implemented DRY programming principles, reducing redundant
-                                    code and increasing maintainability.
-                                </li>
-                                <li>
-                                    Updated client-side scripts with modern ECMAScript
-                                    standards, reducing third-party library dependencies.
-                                </li>
-                            </ul>
-                            <div class="employment-skillset">
-                                <h5>Projects</h5>
-                                <ul>
-                                    <li><b>Packaging</b></li>
-                                </ul>
-                                <h5>Programming Languages</h5>
-                                <ul>
-                                    <li>C#</li>
-                                    <li>JavaScript</li>
-                                    <li>T-SQL</li>
-                                    <li>Powershell</li>
-                                </ul>
-                                <h5>Frontend Technologies</h5>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>DataTables.js</li>
-                                    <li>jQuery</li>
-                                    <li>Fork Awesome</li>
-                                </ul>
-                                <h5>Frameworks</h5>
-                                <ul>
-                                    <li>.NET Framework</li>
-                                    <li>.NET Core</li>
-                                    <li>Entity Framework Core</li>
-                                    <li>Entity Framework</li>
-                                    <li>ASP.NET MVC</li>
-                                </ul>
-                                <h5>Tools & Environments</h5>
-                                <ul>
-                                    <li>SSMS</li>
-                                    <li>Gitlab</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="employment-2022-10" class="section-content">
-                        <header>
-                            <h4>Software Engineer</h4>
-                            <div class="affiliation-details">
-                                <a class="emloyment-company" href="https://insightglobal.com/">Insight Global</a>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2022-10">Oct 2022</time>
-                                    -
-                                    <time class="end-date" datetime="2023-03">Mar 2023</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                Senior Software Engineer consulting for W.L. Gore in support
-                                of an FDA regulated .NET Webforms application that served as a
-                                custom front end for Siemens Camstar Systems.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Supported an FDA-regulated .NET Webforms application,
-                                    enhancing stability and performance.
-                                </li>
-                                <li>
-                                    Optimized SQL queries using Dapper, reducing database
-                                    transaction times.
-                                </li>
-                                <li>
-                                    Implemented logging for performance benchmarking of page
-                                    life cycles and database interactions.
-                                </li>
-                                <li>
-                                    Successfully executed a major production release, improving
-                                    system functionality.
-                                </li>
-                            </ul>
-                            <div class="employment-skillset">
-                                <h5>Projects</h5>
-                                <ul>
-                                    <li>Camstar API Interface</li>
-                                </ul>
-                                <h5>Programming Languages</h5>
-                                <ul>
-                                    <li>C#</li>
-                                    <li>JavaScript</li>
-                                    <li>T-SQL</li>
-                                </ul>
-                                <h5>Frontend Technologies</h5>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Bootstrap.js</li>
-                                    <li>jQuery</li>
-                                    <li>Dapper</li>
-                                </ul>
-                                <h5>Frameworks</h5>
-                                <ul>
-                                    <li>.NET Framework</li>
-                                    <li>ASP.NET MVC</li>
-                                </ul>
-                                <h5>Tools & Environments</h5>
-                                <ul>
-                                    <li>SSMS</li>
-                                    <li>RhodeCode</li>
-                                    <li>Jira</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="employment-2021-01" class="section-content">
-                        <header>
-                            <h4>Senior Software Engineer</h4>
-                            <div class="affiliation-details">
-                                <a class="emloyment-company" href="https://tacom.army.mil/ilsc">U.S. Army TACOM</a>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2021-01">Jan 2021</time>
-                                    -
-                                    <time class="end-date" datetime="2022-10">Oct 2022</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                Served as Senior Developer for the TACOM Arsenal's Integrated
-                                Logistics Support Center (ILSC) Packaging applications which
-                                supported logistics and supply chain management for U.S. Army
-                                personnel. Developed and enhanced multiple web applications
-                                while providing guidance and mentorship to junior developers.
-                                I was responsible for modernizing a legacy .NET 4.x WebForms
-                                application by transitioning it to .NET 5 and Entity Framework
-                                Core, which significantly improved its performance,
-                                maintainability, and security. Additionally, I worked on
-                                optimizing file upload processes by integrating Dropzone.js,
-                                streamlining large file handling. To improve reporting
-                                capabilities, I developed a tool that minimized reliance on
-                                SSRS and enabled faster report generation. Collaborating
-                                closely with stakeholders, I ensured that new features aligned
-                                with business needs, contributing to the overall efficiency
-                                and effectiveness of the system.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Primary developer and technical lead for the migration of
-                                    UTAP, a legacy .NET 4.x WebForms application, to .NET 5 and
-                                    Entity Framework Core, enhancing performance,
-                                    maintainability, and security.
-                                </li>
-                                <li>
-                                    Implemented Dropzone.js for large file uploads to avoid
-                                    upload size restrictions and to provide a better performant
-                                    user interface supporting multiple uploads at a time.
-                                </li>
-                                <li>
-                                    Developed a reporting tool to relieve SSRS dependencies for
-                                    our web applications and decreased development time for
-                                    future report requests. This reporting tool facilitates the
-                                    display of tabular data utilizing Datables.js and supports
-                                    excel output.
-                                </li>
-                                <li>
-                                    Collaborated with customers to gather requirements for new
-                                    features, prioritized and delegated tasks, and provided
-                                    development timelines and testing estimates to stakeholders.
-                                </li>
-                                <li>
-                                    Ensured compliance with security and regulatory standards in
-                                    all software development activities.
-                                </li>
-                            </ul>
-                            <div class="employment-skillset">
-                                <h5>Projects</h5>
-                                <ul>
-                                    <li>UTAP</li>
-                                    <li>Packaging</li>
-                                </ul>
-                                <h5>Programming Languages</h5>
-                                <ul>
-                                    <li>C#</li>
-                                    <li>JavaScript</li>
-                                    <li>T-SQL</li>
-                                </ul>
-                                <h5>Frontend Technologies</h5>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>DataTables.js</li>
-                                    <li>jQuery</li>
-                                    <li>Dropzone.js</li>
-                                    <li>Fork Awesome</li>
-                                </ul>
-                                <h5>Frameworks</h5>
-                                <ul>
-                                    <li>.NET Framework</li>
-                                    <li>.NET Core</li>
-                                    <li>Entity Framework Core</li>
-                                    <li>Entity Framework</li>
-                                    <li>ASP.NET MVC</li>
-                                </ul>
-                                <h5>Tools & Environments</h5>
-                                <ul>
-                                    <li>SSMS</li>
-                                    <li>Gitlab</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="employment-2019-01" class="section-content">
-                        <header>
-                            <h4>Software Engineer</h4>
-                            <div class="affiliation-details">
-                                <a class="emloyment-company" href="https://lintechglobal.com/">LinTech Global, Inc</a>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2019-01">Jan 2019</time>
-                                    -
-                                    <time class="end-date" datetime="2022-01">Jan 2021</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                I played a key role in improving sustainment applications by
-                                modernizing UI performance using Web API and AJAX, resulting
-                                in a more responsive and efficient user experience. I also
-                                developed a flexible data import tool that supports JSON, CSV,
-                                and Excel formats, enabling seamless database integration. In
-                                addition, I wrote and maintained comprehensive technical
-                                documentation to ensure clear knowledge transfer and system
-                                clarity. Through extensive unit testing, I strengthened
-                                application stability and ensured compatibility with legacy
-                                code, contributing to a more robust software environment.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Modernized sustainment applications, improving UI
-                                    performance through Web API and AJAX.
-                                </li>
-                                <li>
-                                    Built a data import tool supporting JSON, CSV, and Excel
-                                    file formats for efficient data handling.
-                                </li>
-                                <li>
-                                    Created and updated technical documentation for custom
-                                    application features.
-                                </li>
-                                <li>
-                                    Developed unit tests to ensure code stability and legacy
-                                    compatibility
-                                </li>
-                            </ul>
-                            <div class="employment-skillset">
-                                <h5>Projects</h5>
-                                <ul>
-                                    <li>Packaging</li>
-                                    <li>MICAS</li>
-                                </ul>
-                                <h5>Programming Languages</h5>
-                                <ul>
-                                    <li>C#</li>
-                                    <li>JavaScript</li>
-                                    <li>T-SQL</li>
-                                </ul>
-                                <h5>Frontend Technologies</h5>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Knockout.js</li>
-                                    <li>DataTables.js</li>
-                                    <li>jQuery</li>
-                                    <li>Fork Awesome</li>
-                                </ul>
-                                <h5>Frameworks</h5>
-                                <ul>
-                                    <li>.NET Framework</li>
-                                    <li>Entity Framework</li>
-                                    <li>ASP.NET MVC</li>
-                                </ul>
-                                <h5>Tools & Environments</h5>
-                                <ul>
-                                    <li>SSMS</li>
-                                    <li>Gitlab</li>
-                                    <li>Bitbucket</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="employment-2013-01" class="section-content">
-                        <header>
-                            <h4>Software Engineer</h4>
-                            <div class="affiliation-details">
-                                <a class="emloyment-company" href="https://www.ubtus.com/">Unified Business Technologies
-                                    (UBT), Inc.</a>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2013-01">Jan 2013</time>
-                                    -
-                                    <time class="end-date" datetime="2019-01">Jan 2019</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                At UBT, I contributed to the development and sustainment of
-                                multiple enterprise applications, ensuring efficiency and
-                                automation in key business processes. One of my primary
-                                responsibilities was maintaining and enhancing MICAS Web, a
-                                system that tracks and maintains the shelf-life serviceability
-                                of items while supporting critical logistics functions such as
-                                receiving, inspecting, storing, issuing, shipping, and
-                                tracking. Additionally, I played a key role in the development
-                                of ACAAS, an automated system that streamlined the hiring and
-                                transfer process at the Detroit Arsenal by creating a
-                                centralized repository with record tracking and automated
-                                notifications. My contributions included modernizing
-                                application architectures, improving database interactions,
-                                and optimizing user interfaces for better performance and
-                                usability.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Automated employee hiring processes to eliminate redundant
-                                    workflows and automated email notifications to improve
-                                    communication and tracking of hiring processes.
-                                </li>
-                                <li>
-                                    Migrated legacy WebForms pages to ASP.NET MVC, improving
-                                    maintainability and performance
-                                </li>
-                                <li>
-                                    Assisted in migrating data access to Entity Framework 6 Code
-                                    First, optimizing performance and security.
-                                </li>
-                                <li>
-                                    Implemented IndexedDB with Dexie.js for offline
-                                    functionality in transaction processing.
-                                </li>
-                                <li>
-                                    Developed unit tests to ensure code stability and legacy
-                                    compatibility
-                                </li>
-                            </ul>
-                            <div class="employment-skillset">
-                                <h5>Projects</h5>
-                                <ul>
-                                    <li>Packaging</li>
-                                    <li>MICAS</li>
-                                    <li>ACAAS</li>
-                                </ul>
-                                <h5>Programming Languages</h5>
-                                <ul>
-                                    <li>C#</li>
-                                    <li>JavaScript</li>
-                                    <li>T-SQL</li>
-                                </ul>
-                                <h5>Frontend Technologies</h5>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Knockout.js</li>
-                                    <li>jQuery</li>
-                                    <li>plotly.js</li>
-                                    <li>dexie.js</li>
-                                    <li>IndexedDB</li>
-                                    <li>AJAX</li>
-                                </ul>
-                                <h5>Frameworks</h5>
-                                <ul>
-                                    <li>.NET Framework</li>
-                                    <li>Entity Framework</li>
-                                    <li>ASP.NET MVC</li>
-                                    <li>ASP.NET WebForms</li>
-                                </ul>
-                                <h5>Tools & Environments</h5>
-                                <ul>
-                                    <li>SSMS</li>
-                                    <li>Gitlab</li>
-                                    <li>Bitbucket</li>
-                                    <li>TortoiseSVN</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="employment-2011-09" class="section-content">
-                        <header>
-                            <h4>Web and Graphic Design Intern</h4>
-                            <div class="affiliation-details">
-                                <span class="emloyment-company">Rollstone Studios</span>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2011-09">Sept 2011</time>
-                                    -
-                                    <time class="end-date" datetime="2011-12">Dec 2011</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                During my time at Rollstone Studios, I collaborated with
-                                clients to design and develop websites that effectively
-                                promoted their artwork. I managed website updates using
-                                WordPress CMS, ensuring content remained current and visually
-                                appealing. Additionally, I designed a variety of marketing
-                                materials, including flyers, posters, and business cards, to
-                                enhance brand presence. My role also involved assisting with
-                                the coordination of community events, supporting local artists
-                                in showcasing their work.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Developed and maintained WordPress websites for artists,
-                                    ensuring optimal performance and user engagement.
-                                </li>
-                                <li>
-                                    Designed promotional materials such as flyers, posters, and
-                                    business cards to support marketing initiatives.
-                                </li>
-                                <li>
-                                    Assisted in organizing and promoting community art events,
-                                    enhancing local engagement and outreach.
-                                </li>
-                            </ul>
-                            <div class="employment-skillset">
-                                <h5>Projects</h5>
-                                <ul>
-                                    <li>annegiancola.com (inactive)</li>
-                                    <li>paulajmurphy.com (inactive)</li>
-                                </ul>
-                                <h5>Programming Languages</h5>
-                                <ul>
-                                    <li>PHP</li>
-                                </ul>
-                                <h5>Frontend Technologies</h5>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>jQuery</li>
-                                </ul>
-                                <h5>Tools & Environments</h5>
-                                <ul>
-                                    <li>WordPress</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="employment-2002-11" class="section-content">
-                        <header>
-                            <h4>United States Marine Corps</h4>
-                            <div class="affiliation-details">
-                                <a class="emloyment-company"
-                                    href="https://www.youtube.com./watch?v=62tnJtLBQzQ&autoplay=1">USMC</a>
-                                <span class="affiliation-period">
-                                    <time class="start-date" datetime="2002-11">Nov 2002</time>
-                                    -
-                                    <time class="end-date" datetime="2006-11">Nov 2006</time>
-                                </span>
-                            </div>
-                        </header>
-                        <div class="employment-description">
-                            <p class="employment-summary">
-                                During my time in the United States Marine Corps, I maintained
-                                Defense Message System (DMS) operations, ensuring the secure
-                                and reliable routing of critical messages to relevant
-                                personnel and parties via X.500 directories. My role required
-                                precision, attention to security protocols, and the ability to
-                                troubleshoot messaging systems to maintain operational
-                                efficiency and confidentiality.
-                            </p>
-                            <ul class="employment-accomplishments">
-                                <li>
-                                    Maintained Defense Message System (DMS) operations, ensuring
-                                    secure and efficient message routing.
-                                </li>
-                                <li>
-                                    Monitored and troubleshot messaging systems to maintain
-                                    operational integrity and minimize downtime.
-                                </li>
-                                <li>
-                                    Maintained Marine Corps training and conduct standards,
-                                    ensuring operational readiness and discipline.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div id="employment-2022-10" class="section-content">
+              <header>
+                <h4>Software Engineer</h4>
+                <div class="affiliation-details">
+                  <a class="emloyment-company" href="https://insightglobal.com/"
+                    >Insight Global</a
+                  >
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2022-10">Oct 2022</time>
+                    -
+                    <time class="end-date" datetime="2023-03">Mar 2023</time>
+                  </span>
                 </div>
-            </section>
-            <section id="education">
-                <div class="organization-timeline">
-                    <h3>Education</h3>
-                    <div id="education-2007-01" class="section-content">
-                        <header>
-                            <h4>Bachelor of Science (BS)</h4>
-                            <div class="affiliation-details">
-                                <a class="affiliation-name" href="https://www.fitchburgstate.edu/">Fitchburg State
-                                    University</a>
-                                <span class="affiliation-period">
-                                    <time datetime="2007-01">Jan 2007</time> -
-                                    <time datetime="2012-05">May 2012</time>
-                                </span>
-                            </div>
-                        </header>
-                        <p class="education-degree">
-                            <strong>Major:</strong> Communication Media:Interactive Media
-                        </p>
-                        <p class="education-minor">
-                            <strong>Minor:</strong> Computer Science
-                        </p>
-                        <p class="education-grade">
-                            <strong>GPA:</strong> 3.5 <i> - Magna Cum Laude</i>
-                        </p>
-                    </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  Senior Software Engineer consulting for W.L. Gore in support
+                  of an FDA regulated .NET Webforms application that served as a
+                  custom front end for Siemens Camstar Systems.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Supported an FDA-regulated .NET Webforms application,
+                    enhancing stability and performance.
+                  </li>
+                  <li>
+                    Optimized SQL queries using Dapper, reducing database
+                    transaction times.
+                  </li>
+                  <li>
+                    Implemented logging for performance benchmarking of page
+                    life cycles and database interactions.
+                  </li>
+                  <li>
+                    Successfully executed a major production release, improving
+                    system functionality.
+                  </li>
+                </ul>
+                <div class="employment-skillset">
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Camstar API Interface</li>
+                  </ul>
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>T-SQL</li>
+                  </ul>
+                  <h5>Frontend Technologies</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap.js</li>
+                    <li>jQuery</li>
+                    <li>Dapper</li>
+                  </ul>
+                  <h5>Frameworks</h5>
+                  <ul>
+                    <li>.NET Framework</li>
+                    <li>ASP.NET MVC</li>
+                  </ul>
+                  <h5>Tools & Environments</h5>
+                  <ul>
+                    <li>SSMS</li>
+                    <li>RhodeCode</li>
+                    <li>Jira</li>
+                  </ul>
                 </div>
-            </section>
-            <a href="#top" id="back-to-top" title="Back to top"></a>
-        </article>
+              </div>
+            </div>
+            <div id="employment-2021-01" class="section-content">
+              <header>
+                <h4>Senior Software Engineer</h4>
+                <div class="affiliation-details">
+                  <a
+                    class="emloyment-company"
+                    href="https://tacom.army.mil/ilsc"
+                    >U.S. Army TACOM</a
+                  >
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2021-01">Jan 2021</time>
+                    -
+                    <time class="end-date" datetime="2022-10">Oct 2022</time>
+                  </span>
+                </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  Served as Senior Developer for the TACOM Arsenal's Integrated
+                  Logistics Support Center (ILSC) Packaging applications which
+                  supported logistics and supply chain management for U.S. Army
+                  personnel. Developed and enhanced multiple web applications
+                  while providing guidance and mentorship to junior developers.
+                  I was responsible for modernizing a legacy .NET 4.x WebForms
+                  application by transitioning it to .NET 5 and Entity Framework
+                  Core, which significantly improved its performance,
+                  maintainability, and security. Additionally, I worked on
+                  optimizing file upload processes by integrating Dropzone.js,
+                  streamlining large file handling. To improve reporting
+                  capabilities, I developed a tool that minimized reliance on
+                  SSRS and enabled faster report generation. Collaborating
+                  closely with stakeholders, I ensured that new features aligned
+                  with business needs, contributing to the overall efficiency
+                  and effectiveness of the system.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Primary developer and technical lead for the migration of
+                    UTAP, a legacy .NET 4.x WebForms application, to .NET 5 and
+                    Entity Framework Core, enhancing performance,
+                    maintainability, and security.
+                  </li>
+                  <li>
+                    Implemented Dropzone.js for large file uploads to avoid
+                    upload size restrictions and to provide a better performant
+                    user interface supporting multiple uploads at a time.
+                  </li>
+                  <li>
+                    Developed a reporting tool to relieve SSRS dependencies for
+                    our web applications and decreased development time for
+                    future report requests. This reporting tool facilitates the
+                    display of tabular data utilizing Datables.js and supports
+                    excel output.
+                  </li>
+                  <li>
+                    Collaborated with customers to gather requirements for new
+                    features, prioritized and delegated tasks, and provided
+                    development timelines and testing estimates to stakeholders.
+                  </li>
+                  <li>
+                    Ensured compliance with security and regulatory standards in
+                    all software development activities.
+                  </li>
+                </ul>
+                <div class="employment-skillset">
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>UTAP</li>
+                    <li>Packaging</li>
+                  </ul>
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>T-SQL</li>
+                  </ul>
+                  <h5>Frontend Technologies</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>DataTables.js</li>
+                    <li>jQuery</li>
+                    <li>Dropzone.js</li>
+                    <li>Fork Awesome</li>
+                  </ul>
+                  <h5>Frameworks</h5>
+                  <ul>
+                    <li>.NET Framework</li>
+                    <li>.NET Core</li>
+                    <li>Entity Framework Core</li>
+                    <li>Entity Framework</li>
+                    <li>ASP.NET MVC</li>
+                  </ul>
+                  <h5>Tools & Environments</h5>
+                  <ul>
+                    <li>SSMS</li>
+                    <li>Gitlab</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="employment-2019-01" class="section-content">
+              <header>
+                <h4>Software Engineer</h4>
+                <div class="affiliation-details">
+                  <a class="emloyment-company" href="https://lintechglobal.com/"
+                    >LinTech Global, Inc</a
+                  >
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2019-01">Jan 2019</time>
+                    -
+                    <time class="end-date" datetime="2022-01">Jan 2021</time>
+                  </span>
+                </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  I played a key role in improving sustainment applications by
+                  modernizing UI performance using Web API and AJAX, resulting
+                  in a more responsive and efficient user experience. I also
+                  developed a flexible data import tool that supports JSON, CSV,
+                  and Excel formats, enabling seamless database integration. In
+                  addition, I wrote and maintained comprehensive technical
+                  documentation to ensure clear knowledge transfer and system
+                  clarity. Through extensive unit testing, I strengthened
+                  application stability and ensured compatibility with legacy
+                  code, contributing to a more robust software environment.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Modernized sustainment applications, improving UI
+                    performance through Web API and AJAX.
+                  </li>
+                  <li>
+                    Built a data import tool supporting JSON, CSV, and Excel
+                    file formats for efficient data handling.
+                  </li>
+                  <li>
+                    Created and updated technical documentation for custom
+                    application features.
+                  </li>
+                  <li>
+                    Developed unit tests to ensure code stability and legacy
+                    compatibility
+                  </li>
+                </ul>
+                <div class="employment-skillset">
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Packaging</li>
+                    <li>MICAS</li>
+                  </ul>
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>T-SQL</li>
+                  </ul>
+                  <h5>Frontend Technologies</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Knockout.js</li>
+                    <li>DataTables.js</li>
+                    <li>jQuery</li>
+                    <li>Fork Awesome</li>
+                  </ul>
+                  <h5>Frameworks</h5>
+                  <ul>
+                    <li>.NET Framework</li>
+                    <li>Entity Framework</li>
+                    <li>ASP.NET MVC</li>
+                  </ul>
+                  <h5>Tools & Environments</h5>
+                  <ul>
+                    <li>SSMS</li>
+                    <li>Gitlab</li>
+                    <li>Bitbucket</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="employment-2013-01" class="section-content">
+              <header>
+                <h4>Software Engineer</h4>
+                <div class="affiliation-details">
+                  <a class="emloyment-company" href="https://www.ubtus.com/"
+                    >Unified Business Technologies (UBT), Inc.</a
+                  >
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2013-01">Jan 2013</time>
+                    -
+                    <time class="end-date" datetime="2019-01">Jan 2019</time>
+                  </span>
+                </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  At UBT, I contributed to the development and sustainment of
+                  multiple enterprise applications, ensuring efficiency and
+                  automation in key business processes. One of my primary
+                  responsibilities was maintaining and enhancing MICAS Web, a
+                  system that tracks and maintains the shelf-life serviceability
+                  of items while supporting critical logistics functions such as
+                  receiving, inspecting, storing, issuing, shipping, and
+                  tracking. Additionally, I played a key role in the development
+                  of ACAAS, an automated system that streamlined the hiring and
+                  transfer process at the Detroit Arsenal by creating a
+                  centralized repository with record tracking and automated
+                  notifications. My contributions included modernizing
+                  application architectures, improving database interactions,
+                  and optimizing user interfaces for better performance and
+                  usability.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Automated employee hiring processes to eliminate redundant
+                    workflows and automated email notifications to improve
+                    communication and tracking of hiring processes.
+                  </li>
+                  <li>
+                    Migrated legacy WebForms pages to ASP.NET MVC, improving
+                    maintainability and performance
+                  </li>
+                  <li>
+                    Assisted in migrating data access to Entity Framework 6 Code
+                    First, optimizing performance and security.
+                  </li>
+                  <li>
+                    Implemented IndexedDB with Dexie.js for offline
+                    functionality in transaction processing.
+                  </li>
+                  <li>
+                    Developed unit tests to ensure code stability and legacy
+                    compatibility
+                  </li>
+                </ul>
+                <div class="employment-skillset">
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>Packaging</li>
+                    <li>MICAS</li>
+                    <li>ACAAS</li>
+                  </ul>
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>T-SQL</li>
+                  </ul>
+                  <h5>Frontend Technologies</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Knockout.js</li>
+                    <li>jQuery</li>
+                    <li>plotly.js</li>
+                    <li>dexie.js</li>
+                    <li>IndexedDB</li>
+                    <li>AJAX</li>
+                  </ul>
+                  <h5>Frameworks</h5>
+                  <ul>
+                    <li>.NET Framework</li>
+                    <li>Entity Framework</li>
+                    <li>ASP.NET MVC</li>
+                    <li>ASP.NET WebForms</li>
+                  </ul>
+                  <h5>Tools & Environments</h5>
+                  <ul>
+                    <li>SSMS</li>
+                    <li>Gitlab</li>
+                    <li>Bitbucket</li>
+                    <li>TortoiseSVN</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="employment-2011-09" class="section-content">
+              <header>
+                <h4>Web and Graphic Design Intern</h4>
+                <div class="affiliation-details">
+                  <span class="emloyment-company">Rollstone Studios</span>
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2011-09">Sept 2011</time>
+                    -
+                    <time class="end-date" datetime="2011-12">Dec 2011</time>
+                  </span>
+                </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  During my time at Rollstone Studios, I collaborated with
+                  clients to design and develop websites that effectively
+                  promoted their artwork. I managed website updates using
+                  WordPress CMS, ensuring content remained current and visually
+                  appealing. Additionally, I designed a variety of marketing
+                  materials, including flyers, posters, and business cards, to
+                  enhance brand presence. My role also involved assisting with
+                  the coordination of community events, supporting local artists
+                  in showcasing their work.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Developed and maintained WordPress websites for artists,
+                    ensuring optimal performance and user engagement.
+                  </li>
+                  <li>
+                    Designed promotional materials such as flyers, posters, and
+                    business cards to support marketing initiatives.
+                  </li>
+                  <li>
+                    Assisted in organizing and promoting community art events,
+                    enhancing local engagement and outreach.
+                  </li>
+                </ul>
+                <div class="employment-skillset">
+                  <h5>Projects</h5>
+                  <ul>
+                    <li>annegiancola.com (inactive)</li>
+                    <li>paulajmurphy.com (inactive)</li>
+                  </ul>
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>PHP</li>
+                  </ul>
+                  <h5>Frontend Technologies</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>jQuery</li>
+                  </ul>
+                  <h5>Tools & Environments</h5>
+                  <ul>
+                    <li>WordPress</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="employment-2002-11" class="section-content">
+              <header>
+                <h4>United States Marine Corps</h4>
+                <div class="affiliation-details">
+                  <a
+                    class="emloyment-company"
+                    href="https://www.youtube.com./watch?v=62tnJtLBQzQ&autoplay=1"
+                    >USMC</a
+                  >
+                  <span class="affiliation-period">
+                    <time class="start-date" datetime="2002-11">Nov 2002</time>
+                    -
+                    <time class="end-date" datetime="2006-11">Nov 2006</time>
+                  </span>
+                </div>
+              </header>
+              <div class="employment-description">
+                <p class="employment-summary">
+                  During my time in the United States Marine Corps, I maintained
+                  Defense Message System (DMS) operations, ensuring the secure
+                  and reliable routing of critical messages to relevant
+                  personnel and parties via X.500 directories. My role required
+                  precision, attention to security protocols, and the ability to
+                  troubleshoot messaging systems to maintain operational
+                  efficiency and confidentiality.
+                </p>
+                <ul class="employment-accomplishments">
+                  <li>
+                    Maintained Defense Message System (DMS) operations, ensuring
+                    secure and efficient message routing.
+                  </li>
+                  <li>
+                    Monitored and troubleshot messaging systems to maintain
+                    operational integrity and minimize downtime.
+                  </li>
+                  <li>
+                    Maintained Marine Corps training and conduct standards,
+                    ensuring operational readiness and discipline.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="education">
+          <div class="organization-timeline">
+            <h3>Education</h3>
+            <div id="education-2007-01" class="section-content">
+              <header>
+                <h4>Bachelor of Science (BS)</h4>
+                <div class="affiliation-details">
+                  <a
+                    class="affiliation-name"
+                    href="https://www.fitchburgstate.edu/"
+                    >Fitchburg State University</a
+                  >
+                  <span class="affiliation-period">
+                    <time datetime="2007-01">Jan 2007</time> -
+                    <time datetime="2012-05">May 2012</time>
+                  </span>
+                </div>
+              </header>
+              <p class="education-degree">
+                <strong>Major:</strong> Communication Media:Interactive Media
+              </p>
+              <p class="education-minor">
+                <strong>Minor:</strong> Computer Science
+              </p>
+              <p class="education-grade">
+                <strong>GPA:</strong> 3.5 <i> - Magna Cum Laude</i>
+              </p>
+            </div>
+          </div>
+        </section>
+        <a href="#top" id="back-to-top" title="Back to top"></a>
+      </article>
     </main>
     <footer id="main-footer">
-        <address id="contact-information" class="wrapper">
-            <a href="https://linkedin.com/in/michael-lucci">
-                linkedin.com/in/michael-lucci
-            </a>
-        </address>
+      <address id="contact-information" class="wrapper">
+        <a href="https://linkedin.com/in/michael-lucci">
+          linkedin.com/in/michael-lucci
+        </a>
+      </address>
     </footer>
-</body>
-
+  </body>
 </html>

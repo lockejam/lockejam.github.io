@@ -30,7 +30,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.45rem;
 }
 
 h3,
@@ -38,14 +38,6 @@ h4 {
   font-weight: 400;
   letter-spacing: 0.5px;
   border-bottom: 1px solid var(--border-color);
-}
-
-h3 {
-  font-size: 1.45rem;
-}
-
-h3,
-h4 {
   padding: 1px var(--side-padding);
   margin: 0;
 }
@@ -70,27 +62,25 @@ a {
   color: var(--link-color);
   text-decoration: none;
   transition: color var(--transition-speed);
+
+  & .external-link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 50%;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      margin-right: 0.25em;
+      vertical-align: text-bottom;
+      background-color: currentColor;
+      mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14 3h7v7h-2V6.41L10.41 15 9 13.59 17.59 5H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v5h2V5zm0 14v-5H3v5c0 1.1.9 2 2 2h5v-2H5zm14 0h-5v2h5c1.1 0 2-.9 2-2v-5h-2v5z'/></svg>") no-repeat center/contain;
+      transition: all var(--transition-speed);
+    }
+  }
 }
-
-
-a.external-link {
-  position: relative;
-}
-
-a.external-link::after {
-  content: "";
-  position: absolute;
-  bottom: 50%;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  margin-right: 0.25em;
-  vertical-align: text-bottom;
-  background-color: currentColor;
-  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14 3h7v7h-2V6.41L10.41 15 9 13.59 17.59 5H14V3zM5 5h5V3H5c-1.1 0-2 .9-2 2v5h2V5zm0 14v-5H3v5c0 1.1.9 2 2 2h5v-2H5zm14 0h-5v2h5c1.1 0 2-.9 2-2v-5h-2v5z'/></svg>") no-repeat center/contain;
-  transition: all var(--transition-speed);
-}
-
 
 .chip-label {
   background-color: var(--light-green);
@@ -141,17 +131,17 @@ a:hover {
   color: var(--text-color);
 }
 
-a.external-link:hover::after {
-  opacity: 1;
-  width: 0.65em;
-  height: 0.65em;
-}
-
 @media (hover: hover) and (pointer: fine) {
 
   a.chip-label:hover {
     border-color: var(--border-color);
     transition: all var(--transition-speed);
+  }
+
+  a.external-link:hover::after {
+    opacity: 1;
+    width: 0.65em;
+    height: 0.65em;
   }
 
   #back-to-top:hover {
