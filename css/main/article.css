@@ -33,11 +33,11 @@ article section ul {
   }
 }
 
-article section nav {
+#experience-timeline {
   position: sticky;
   top: var(--header-height);
   margin-top: var(--top-padding);
-  padding: 1rem 0.1rem;;
+  padding: 1rem 0.1rem;
   width: 100%;
   max-width: 100dvw;
   overflow-x: auto;
@@ -46,7 +46,7 @@ article section nav {
   box-sizing: border-box;
 }
 
-article section nav ul {
+#experience-timeline ul {
   display: flex;
   list-style: none;
   flex-wrap: nowrap;
@@ -57,23 +57,23 @@ article section nav ul {
   min-width: 100%;
 }
 
-article section nav a {
+#experience-timeline a {
   border: 2px solid transparent;
   display: block;
   text-decoration: none;
 }
 
-article section nav a time {
+#experience-timeline a time {
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 
-article section nav a time:last-child {
+#experience-timeline a time:last-child {
   border-top: 2px solid var(--border-color);
 }
 
-article nav time {
+#experience-timeline time {
   white-space: nowrap;
 }
 

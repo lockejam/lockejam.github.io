@@ -46,7 +46,7 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: clamp(1rem, 4vw, 5em);
+  gap: clamp(0rem, 4vw, 5em);
 }
 
 #main-menu li:has(a[href="#professional-attributes"]) {
@@ -56,7 +56,7 @@
 #main-menu a {
   color: var(--link-color);
   text-decoration: none;
-  padding: 0.5rem;
+  padding: clamp(0.1rem, 4vw, 0.5rem);
   border-radius: var(--border-radius);
   transition: background-color var(--transition-speed),
     color var(--transition-speed);
