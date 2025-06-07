@@ -1,6 +1,6 @@
 #main-header {
-  --text-color: var(--text-color-dark-background);
-  --link-color: var(--link-color-dark-background);
+  --header-text-color: var(--text-color-dark-background);
+  --header-link-color: var(--link-color-dark-background);
   --background-highlight-rgb: var(--light-green-rgb);
 
   background-color: var(--dark-green);
@@ -18,7 +18,7 @@
   display: flex;
   align-items: baseline;
   gap: var(--side-padding);
-  color: var(--text-color);
+  color: var(--header-text-color);
 }
 
 #person-name-and-title :where(h1, h2) {
@@ -28,7 +28,7 @@
 
 #person-name {
   position: relative;
-  color: var(--link-color);
+  color: var(--header-link-color);
 }
 
 #job-title {
@@ -37,7 +37,7 @@
   padding: 0 var(--side-padding);
   border-radius: var(--border-radius);
   border: none;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 #main-menu ul {
@@ -54,18 +54,26 @@
 }
 
 #main-menu a {
-  color: var(--link-color);
+  color: var(--header-link-color);
   text-decoration: none;
   padding: clamp(0.1rem, 4vw, 0.5rem);
+  padding-bottom: 1px;
+  border-bottom: clamp(0.1rem, 4vw, 0.5rem) solid transparent;
   border-radius: var(--border-radius);
-  transition: background-color var(--transition-speed),
-    color var(--transition-speed);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
 @media (hover: hover) and (pointer: fine) {
   #main-menu a:hover {
     text-decoration: none;
     background-color: var(--light-green);
-    color: var(--text-green);
+    color: var(--header-text-color);
+    border-color: var(--light-green);
+  }
+
+  @media (prefers-color-scheme: light){
+    #main-menu a:hover {
+      color: var(--dark-green);
+    }
   }
 }
