@@ -52,12 +52,6 @@ h5 {
   margin: 0;
 }
 
-.wrapper {
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 a {
   color: var(--link-color);
   text-decoration: none;

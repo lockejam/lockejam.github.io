@@ -1,36 +1,42 @@
-  #main-header, 
-  #main-footer,
-  #experience-timeline {
-    z-index: 1000;
-  }
-  
-  /* sticky header */
-  #main-header {
-    position: sticky;
-    top: 0;
-    flex-shrink: 0;
-  }
-  
-  /* sticky footer */
-  #main-footer {
-    position: sticky;
-    bottom: 0;
-    font-size: 0.9rem;
-  }
-  
-  /* two‑column layout: aside + article */
-  main.wrapper {
-    display: flex;
-    flex: 1;
-    gap: 1vw;
-  }
-  
-  main.wrapper aside,
-  main.wrapper article {
-    flex: 1 1 auto;
-    min-width: 0; /* prevents overflow in narrow layouts */
-  }
-  
-  main section {
-    scroll-margin-top: calc(var(--header-height));
-  }
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#main-header,
+#main-footer,
+#experience-timeline {
+  z-index: 1000;
+}
+
+/* sticky header */
+#main-header {
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+/* sticky footer */
+#main-footer {
+  position: sticky;
+  bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* two‑column layout: aside + article */
+main.wrapper {
+  display: flex;
+  flex: 1;
+  gap: 1vw;
+}
+
+main.wrapper aside,
+main.wrapper article {
+  flex: 1 1 auto;
+  min-width: 0; /* prevents overflow in narrow layouts */
+}
+
+main section {
+  scroll-margin-top: calc(var(--header-height));
+}
