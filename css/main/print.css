@@ -8,7 +8,11 @@
 
   #main-header {
     margin-bottom: 2.5rem;
-    position :initial;
+    position: initial;
+  }
+
+  main.wrapper {
+    flex-direction: column;
   }
 
   nav,
@@ -34,27 +38,22 @@
   }
 
   .section-content {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    break-inside: avoid-page;
   }
 
   section#summary,
   section#experience,
   section#education {
-    page-break-before: always;
-    break-before: page;
+    break-before: avoid-page;
   }
 
-  /* don’t insert a blank first page */
   section#summary {
-    page-break-before: auto;
     break-before: auto;
   }
 
   h1,
   h2,
   h3 {
-    page-break-after: avoid;
     break-after: avoid;
   }
 

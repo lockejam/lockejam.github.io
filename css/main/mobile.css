@@ -1,120 +1,126 @@
-  @media (max-width: 840px) or (max-height: 480px) {
+@media (max-width: 840px) or (max-height: 480px) {
 
-    @media (max-height: 480px) {
+  @media (max-height: 480px) {
 
-      #main-header,
-      #main-footer {
-        position: revert;
-      }
-
-      #experience-timeline {
-        top: 0;
-      }
-
-      .section-content {
-        scroll-margin-top: var(--experience-timeline-height);
-      }
-
-      #back-to-top {
-        bottom: 0;
-      }
-
+    #main-header,
+    #main-footer {
+      position: revert;
     }
 
-    #main-content {
-      max-width: 95vw;
+    #experience-timeline {
+      top: 0;
     }
 
-    #main-header .wrapper {
-      flex-direction: column;
-      gap: 0.5rem;
+    .section-content {
+      scroll-margin-top: var(--experience-timeline-height);
     }
 
-    #person-name-and-title {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 0;
-      width: 100%;
+    #back-to-top {
+      bottom: 0;
     }
 
-    #job-title {
-      padding: 0 var(--side-padding);
-    }
+  }
 
-    #main-menu {
-      width: 100%;
-    }
+  #main-content {
+    max-width: 95vw;
+  }
 
+  #main-header .wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #person-name-and-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    width: 100%;
+  }
+
+  #job-title {
+    padding: 0 var(--side-padding);
+  }
+
+  #main-menu {
+    width: 100%;
+  }
+
+  #main-menu ul {
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #main-menu li:has(a[href="#professional-attributes"]) {
+    display: revert;
+  }
+
+  @media(max-width: 350px) {
     #main-menu ul {
-      margin: 0 auto;
-      padding: 0;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #main-menu li:has(a[href="#professional-attributes"]) {
-      display: revert;
-    }
-
-    main.wrapper {
       flex-direction: column;
-    }
-
-    aside h3,
-    article h3 {
-      text-align: center;
-      border-image: linear-gradient(90deg, transparent, var(--dark-green), transparent) 1;
-    }
-
-    main article,
-    main aside,
-    #professional-attributes ul,
-    #professional-attributes li {
-      display: contents;
-    }
-
-    #summary {
-      order: 1;
-    }
-
-    #professional-attributes {
-      order: 2;
-    }
-
-    #experience {
-      order: 3;
-    }
-
-    #education {
-      order: 4;
-    }
-
-    #summary,
-    #professional-attributes,
-    #experince,
-    #education {
-      overflow: visible;
-    }
-
-    .affiliation-details {
-      grid-template-columns: 1fr;
-    }
-
-    .affiliation-period {
-      text-align: revert;
-    }
-
-    aside h4 {
-      display: none;
-    }
-
-    #professional-attributes {
-      text-align: center;
-    }
-
-    #professional-attributes .chip-label {
-      display: inline-block;
-      margin: var(--side-padding);
     }
   }
+
+  main.wrapper {
+    flex-direction: column;
+  }
+
+  aside h3,
+  article h3 {
+    text-align: center;
+    border-image: linear-gradient(90deg, transparent, var(--dark-green), transparent) 1;
+  }
+
+  main article,
+  main aside,
+  #professional-attributes ul,
+  #professional-attributes li {
+    display: contents;
+  }
+
+  #summary {
+    order: 1;
+  }
+
+  #professional-attributes {
+    order: 2;
+  }
+
+  #experience {
+    order: 3;
+  }
+
+  #education {
+    order: 4;
+  }
+
+  #summary,
+  #professional-attributes,
+  #experience,
+  #education {
+    overflow: visible;
+  }
+
+  .affiliation-details {
+    grid-template-columns: 1fr;
+  }
+
+  .affiliation-period {
+    text-align: revert;
+  }
+
+  aside h4 {
+    display: none;
+  }
+
+  #professional-attributes {
+    text-align: center;
+  }
+
+  #professional-attributes .chip-label {
+    display: inline-block;
+    margin: var(--side-padding);
+  }
+}
